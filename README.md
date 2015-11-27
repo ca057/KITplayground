@@ -54,6 +54,9 @@ Dieses Theme ist [underscores.me](http://www.underscores.me), welches als Grundl
 #### [Bootstrap Four](https://wordpress.org/themes/bootstrap-four/)
 Ebenfalls ein Theme welches sich an Entwickler richtet, sieht aber schonmal mehr nach irgendwas aus als wp_test.
 
+#### StuVe BamberD
+ChildTheme von [Bootstrap Four](https://wordpress.org/themes/bootstrap-four/). Werden Befehle nicht überschrieben, werden die des übergeordneten Themes verwendet. Dafür eine Datei mit dem selben Namen wie im übergeordneten Theme anlegen, deren Befehle über `import` holen und den zu ersetzenden Befehl schreiben.
+
 
 ### Plugins installieren
 Das geht nicht über die normale Installation, da wir vom lokalen Server keinen Zugriff auf FTP haben. In der `wp-config.php` gibt es den Befehl `define('FS_METHOD', 'direct');`. Wird dieser einkommentiert, wird kein FTP von Wordpress benötigt.
