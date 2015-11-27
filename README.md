@@ -23,7 +23,17 @@ Damit Wordpress auf die richtige Datenbank zugreift, müsst ihr eine Datenbank a
 Dort müsst ihr eine neue Datenbank namens `wp` anlegen, bei Kollation/Collation haben wir `utf8mb4_unicode_ci` vewendet. Dann wählt ihr die Datenbank in der linken Spalte aus, geht auf Import und importiert das Dump (`docs/wp.sql`).
 
 #### Mac
-TODO
+
+Am einfachsten ist vermutlich folgende Vorgehensweise:
+
+1. Über das Terminal MariaDB Monitor starten (kommt mit XAMPP for Mac): `/Applications/XAMPP/xamppfiles/bin/mysql -u root`
+2a. Falls DB noch nicht vorhanden, anlegen: `create database wp`
+2b. Für einen Data-Dump erst Database löschen und neu anlegen: `drop database wp; create database wp;`
+3. Mit der Datenbank verbinden: `connect wp`
+4. Dump einspielen: `source /Applications/XAMPP/xamppfiles/htdocs/docs/wp.sql`
+5. Beenden von MariaDB Montior über `Ctrl + C`
+
+Sollte zu irgendeinem Zeitpunkt ein `->` erscheinen, ist ein SQL-Statement noch nicht beendet. Also einfach `;` eingeben und `Enter` drücken."
 
 ### Wordpress-Seite aufrufen
 
