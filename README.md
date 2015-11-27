@@ -33,7 +33,7 @@ Am einfachsten ist vermutlich folgende Vorgehensweise:
 4. Dump einspielen: `source /Applications/XAMPP/xamppfiles/htdocs/docs/wp.sql`
 5. Beenden von MariaDB Montior über `Ctrl + C`
 
-Sollte zu irgendeinem Zeitpunkt ein `->` erscheinen, ist ein SQL-Statement noch nicht beendet. Also einfach `;` eingeben und `Enter` drücken."
+Sollte zu irgendeinem Zeitpunkt ein `->` erscheinen, ist ein SQL-Statement noch nicht beendet. Also einfach `;` eingeben und `Enter` drücken.
 
 ### Wordpress-Seite aufrufen
 
