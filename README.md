@@ -8,6 +8,7 @@ Zuerst muss das Repository in den richtigen XAMPP-Ordner geklont werden. Der Dat
 
 	.../xampp/htdocs/
 					wordpress/
+					docs/
 					README.md
 
 Wenn ihr über `git clone` euch das Repository holt, legt git einen Unterordner an. Dann kann es Probleme mit der Datenbank geben (wo wir da den Pfad ändern müssen wissen wir gerade nicht). Einfach alle(!) Inhalte aus dem Unterordner (inklusive des versteckten `.git`-Ordners) eine Ebene höher schieben und alles sollte passen.
