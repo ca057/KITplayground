@@ -6,18 +6,24 @@
 
 Zuerst muss das Repository in den richtigen XAMPP-Ordner geklont werden. Der Dateibaum sollte später so aussehen:
 
-	.../xampp/htdocs/
-					wordpress/
-					docs/
-					README.md
+	.../xampp/
+			htdocs/
+				wordpress/
+				docs/
+				README.md
 
 Wenn ihr über `git clone` euch das Repository holt, legt git einen Unterordner an. Dann kann es Probleme mit der Datenbank geben (wo wir da den Pfad ändern müssen wissen wir gerade nicht). Einfach alle(!) Inhalte aus dem Unterordner (inklusive des versteckten `.git`-Ordners) eine Ebene höher schieben und alles sollte passen.
 
 ### Datenbank aufsetzen
 
+#### Windows
+
 Damit Wordpress auf die richtige Datenbank zugreift, müsst ihr eine Datenbank anlegen. Startet sowohl den Apache-Server als auch MySQL über das XAMPP-Control Panel und ruft `localhost/phpmyadmin/` auf.
 
 Dort müsst ihr eine neue Datenbank namens `wp` anlegen, bei Kollation/Collation haben wir `utf8mb4_unicode_ci` vewendet. Dann wählt ihr die Datenbank in der linken Spalte aus, geht auf Import und importiert das Dump (`docs/wp.sql`).
+
+#### Mac
+TODO
 
 ### Wordpress-Seite aufrufen
 
@@ -36,7 +42,9 @@ Ebenfalls ein Theme welches sich an Entwickler richtet, sieht aber schonmal mehr
 
 
 ### Plugins installieren
-Das geht nicht über die normale Installation, da wir vom lokalen Server keinen Zugriff auf FTP haben. Das Plugin kann aber manuell heruntergeladen werden und in `wordpress/wp-content/plugins` abgelegt werden. Das Plugin liegt dann auch im Repository, muss in den Wordpress-Einstellungen aber erst noch aktiviert werden.
+Das geht nicht über die normale Installation, da wir vom lokalen Server keinen Zugriff auf FTP haben. In der `wp-config.php` gibt es den Befehl `define('FS_METHOD', 'direct');`. Wird dieser einkommentiert, wird kein FTP von Wordpress benötigt.
+
+Das Plugin kann aber manuell heruntergeladen werden und in `wordpress/wp-content/plugins` abgelegt werden. Das Plugin liegt dann auch im Repository, muss in den Wordpress-Einstellungen aber erst noch aktiviert werden.
 
 #### vorinstallierte Plugins
 - Akismet (deaktiviert)
