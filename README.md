@@ -21,6 +21,26 @@ Dort müsst ihr eine neue Datenbank namens `wp` anlegen, bei Kollation/Collation
 
 ### Wordpress-Seite aufrufen
 
-Unter `localhost/wordpress/` sollte nun die Seite fehlerfrei mit zwei Beiträgen erscheinen. Unten auf der Seite findet ihr einen Login, dort könnt ihr euch anmelden.
+Unter `localhost/wordpress/` sollte nun die Seite fehlerfrei mit zwei Beiträgen erscheinen. Unten auf der Seite findet ihr den Login.
 
-So hat jetzt zwar jeder seine eigene Datenbank, das ist zum Entwicklen ja aber nicht so wild. Vielleicht müssen wir am Anfang häufiger ein Dump austauschen, damit jeder mit ähnlichen Kategorien etc. arbeitet. Für die Arbeit am Theme sollte das aber nicht so wild sein.
+## Wordpress-Installation gemeinsam nutzen
+
+So haben wir jetzt zwar alle eine eigene Datenbank, das ist zum Entwicklen ja aber nicht so wild. Vielleicht müssen wir am Anfang häufiger ein Dump austauschen, damit jeder mit ähnlichen Kategorien etc. arbeitet. Für die Arbeit am Theme sollte das aber nicht so wild sein.
+
+### Themes
+#### wp_test
+Dieses Theme ist [underscores.me](http://www.underscores.me), welches als Grundlage für eine eigene Entwicklung genutzt werden kann.
+
+#### [Bootstrap Four](https://wordpress.org/themes/bootstrap-four/)
+Ebenfalls ein Theme welches sich an Entwickler richtet, sieht aber schonmal mehr nach irgendwas aus als wp_test.
+
+
+### Plugins installieren
+Das geht nicht über die normale Installation, da wir vom lokalen Server keinen Zugriff auf FTP haben. Das Plugin kann aber manuell heruntergeladen werden und in `wordpress/wp-content/plugins` abgelegt werden. Das Plugin liegt dann auch im Repository, muss in den Wordpress-Einstellungen aber erst noch aktiviert werden.
+
+#### vorinstallierte Plugins
+- Akismet (deaktiviert)
+- Hello Dolly (deaktiviert)
+
+#### installierte Plugins
+- Event Organiser (aktiviert)
