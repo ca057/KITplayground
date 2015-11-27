@@ -45,6 +45,9 @@ Unter `localhost/wordpress/` sollte nun die Seite fehlerfrei mit zwei Beiträgen
 So haben wir jetzt zwar alle eine eigene Datenbank, das ist zum Entwicklen ja aber nicht so wild. Vielleicht müssen wir am Anfang häufiger ein Dump austauschen, damit jeder mit ähnlichen Kategorien etc. arbeitet. Für die Arbeit am Theme sollte das aber nicht so wild sein.
 
 ### Themes
+
+Ein wichtiger Hinweis zum generellen Arbeiten mit Themes: Unbedingt Child Themes erstellen! Ansosnten werden durch Updates die eigenen Editor-Anpassungen überschrieben.
+
 #### wp_test
 Dieses Theme ist [underscores.me](http://www.underscores.me), welches als Grundlage für eine eigene Entwicklung genutzt werden kann.
 
