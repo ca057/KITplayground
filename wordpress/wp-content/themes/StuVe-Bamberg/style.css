@@ -7,4 +7,53 @@ Template: Bootstrap-Four
 Version: 0.1
 */
 
-@import(../bootstrap-four/style.css)}
+
+@import(../bootstrap-four/style.css);
+
+body {
+	background-color: #93b8b8;
+	font-family: "Verdana";
+}
+
+p {
+    font-size: 20px;
+    color: #293d3d;
+
+}
+
+.form-submit {
+	color: red;
+}
+
+a {
+	color: #404040;
+}
+
+.form-submit p {
+	color: green;
+}
+
+.col-lg-3 {
+	font-size: 15px;
+}
+
+a:hover {
+	color: black;
+}
+
+
+
+h3 {
+	font-size: 30px;
+	color: #e6e6e6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #035b1b;
+    border-color: #035b1b;
+}
+
+.btn-primary:hover {
+	background-color: #024314;
+}
